@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ownerTable")
+@Table(name="owner")
 public class Owner {
 	
 	@Id
@@ -25,6 +25,8 @@ public class Owner {
 	
 	@Column(name = "email")
 	private String email;
+	
+	private String phone;
 
 	public int getId() {
 		return id;
@@ -56,6 +58,14 @@ public class Owner {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	
 	
